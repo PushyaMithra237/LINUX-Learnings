@@ -30,7 +30,14 @@ cp (curr location) to (new location)-- for copying the file
 
 ps aux -- to list all the running process
 ps aux | grep bash -- grep for filtering among the process that you care about 
-top --- top process consuming data
+top --- top process consuming data (pressing 1 while the command is running will give individual CPU utilization)
+htop--- more user friendly (color coded version) way of showing the top consuming processes can kill any process from the interface itself 
+mpstat -- displays statistics for each available processor 
+mpstat 1 5 -- gets 5 reports at 1 second interval 
+vmstat -- Displays virtual memory statistics along with CPU activity(user,idle,wait time)
+iostat -c --provides concise summary of CPU utilization
+sar --- collect system information over time
+ps --- used to check which process is consuming more CPU
 chmod-- commad to give permissions
 chmod u+x
 
